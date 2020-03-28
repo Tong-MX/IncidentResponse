@@ -2,7 +2,7 @@
 大部分情况控制器与视图之间的交互大部分都是以代理来处理相应的点击事件,但是这样做虽然符合iOS设计和实现,但是会导致代码量增加,并且也会让我们增加
 很多重复性代码,并且影响效率
 如果是通知会让后期维护相对繁琐代码容易混乱
-所以本人及团队,根据经验总结以 Runloop 的source1事件配合 - (id)performSelector:(SEL)aSelector withObject:(id)object; 方法
+所以本人及团队,根据经验总结以 Runloop 的source事件配合 - (id)performSelector:(SEL)aSelector withObject:(id)object; 方法
 来做控制器和视图之间交互
 
 只需要继承base 控制器 和 视图 就可以调用
